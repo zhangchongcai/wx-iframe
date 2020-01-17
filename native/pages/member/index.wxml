@@ -1,0 +1,59 @@
+<view class='user-info'>
+  <view class='user-icon'>
+    <image src='https://static.maizuo.com/pc/v5/usr/default/maizuomoren66.jpg'></image>
+  </view>
+  <view wx:if="{{1}}">
+    <!-- <button open-type="getUserInfo" bindtap='getUserInfo'>登录</button> -->
+    <button open-type="getUserInfo" >授权登录</button>
+    <button open-type="getUserInfo" bindtap='touchEvent' >点击事件</button>
+  </view>
+  <view wx:else>
+    <view class="user-avatar">
+      <open-data type="userAvatarUrl"  />
+    </view>
+    <open-data type="userNickName"  class="user-nick"/>
+  </view>
+</view>
+<view class='list'>
+  <view class='item'>
+    <view class='icon'>
+      <image src='/img/order_icon.png'></image>
+    </view>
+    <view class='text'>影票订单</view>
+    <view>0张</view>
+  </view>
+</view>
+
+<view class='list'>
+  <view class='item'>
+    <view class='icon'>
+      <image src='/img/quan_icon.png'></image>
+    </view>
+    <view class='text'>我的现金券</view>
+    <view>0张</view>
+  </view>
+  <view class='item'>
+    <view class='icon'>
+      <image src='/img/yue_icon.png'></image>
+    </view>
+    <view class='text'>账户余额</view>
+    <view>0元</view>
+  </view>
+  <view class='item'>
+    <view class='icon'>
+      <image src='/img/card_icon.png'></image>
+    </view>
+    <view class='text'>我的卖座卡</view>
+    <view>0张</view>
+  </view>
+</view>
+
+<view class='list'>
+  <view class='item'>
+    <view class='icon'>
+      <image src='/img/setting_icon.png'></image>
+    </view>
+    <view class='text'>设置</view>
+    <view></view>
+  </view>
+</view>

@@ -1,0 +1,39 @@
+{
+  "name": "maizuo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "verbose": true,
+    "collectCoverage": true,
+    "coveragePathIgnorePatterns": [
+      "./__tests__/wx.js"
+    ],
+    "testPathIgnorePatterns": [
+      "./__tests__/wx.js"
+    ],
+    "testEnvironment": "node",
+    "setupFiles": ["./__tests__/wx.js"]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhengguorong/maizuo_wechat.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhengguorong/maizuo_wechat/issues"
+  },
+  "homepage": "https://github.com/zhengguorong/maizuo_wechat#readme",
+  "dependencies": {
+    "jest": "^22.4.3"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-jest": "^23.4.2",
+    "babel-preset-es2015": "^6.24.1"
+  }
+}
